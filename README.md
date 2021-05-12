@@ -53,7 +53,14 @@
 
 ├─.env.dev-\* // 不同环境读取变量配置，配合启动命令使用，例如："dev-local": "vue-cli-service serve --mode dev-local",
 
-​
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 特点
+
+1. 开箱即用
+2. 自动格式化代码
+3. rem 自适用 // 需要配置 src/plugins/lib-flexible-2.0/index.js，如果想要将第三方插件 px 转为 rem，需要在 vue.config.js->postcss 中配置
+4. 按环境加载变量 // 需要配合运行指令，例如 npm run dev-local，就会把.env.dev-local 里面的变量挂载到 process.env 上
+5. .....
+   ​
+   See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 1rem === 100px
